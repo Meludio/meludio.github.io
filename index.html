@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/static/js/tailwind.css.js"></script>
+    <script src="/static/js/url_edit.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <title>Meludio</title>
+    <style>
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation to the content with delays */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out forwards;
+            opacity: 0; /* Start with content hidden */
+        }
+
+        /* Delay for each element */
+        .fade-in-1 {
+            animation-delay: 0s;
+        }
+
+        .fade-in-2 {
+            animation-delay: 0.25s;
+        }
+
+        .fade-in-3 {
+            animation-delay: 0.5s;
+        }
+
+        /* Disable scrolling */
+        body {
+            overflow: hidden;
+        }
+
+        /* Glow effect */
+        .glow {
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Red glow for "COMING SOON!" */
+        .red-glow {
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+
+        /* Hover glow effect for navbar icons */
+        .icon-hover:hover {
+            text-shadow: 0 0 12px rgba(255, 165, 0, 0.8);
+            color: rgba(255, 165, 0, 1);
+        }
+
+        /* Transition for smooth glowing effect */
+        .transition-glow {
+            transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Navbar -->
+    <nav class="bg-[#202020] bg-opacity-70 backdrop-blur-lg px-4 py-2 flex justify-between items-center fade-in fade-in-1">
+        <a href="/" class="flex items-center space-x-2">
+            <img src="/static/img/logo.png" alt="Meludio Logo" class="w-12 h-12">
+            <span class="text-2xl font-bold glow">Meludio</span>
+        </a>
+        <div class="flex space-x-4">
+            <a href="https://x.com/meludio57226" target="_blank" class="text-white transition-glow icon-hover">
+                <i class='bx bxl-twitter text-2xl'></i>
+            </a>
+            <a href="https://www.tiktok.com/@meludio.app" target="_blank" class="text-white transition-glow icon-hover">
+                <i class='bx bxl-tiktok text-2xl'></i>
+            </a>
+            <a href="https://github.com/Meludio" target="_blank" class="text-white transition-glow icon-hover">
+                <i class='bx bxl-github text-2xl'></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex flex-col items-center justify-center h-screen text-center space-y-4">
+        <h1 class="text-6xl md:text-8xl font-bold fade-in fade-in-1 glow">Meludio</h1>
+        <h2 class="text-2xl md:text-4xl fade-in fade-in-2">Best Music Experience</h2>
+        <p class="text-2xl md:text-3xl text-red-500 fade-in fade-in-3 red-glow font-bold">COMING SOON!</p>
+    </div>
+
+</body>
+</html>
