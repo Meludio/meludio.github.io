@@ -15,7 +15,6 @@
     <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
     <title>Meludio</title>
     <style>
-        /* Fade-in animation */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -25,13 +24,11 @@
             }
         }
 
-        /* Apply the animation to the content with delays */
         .fade-in {
             animation: fadeIn 2s ease-in-out forwards;
-            opacity: 0; /* Start with content hidden */
+            opacity: 0;
         }
 
-        /* Delay for each element */
         .fade-in-1 {
             animation-delay: 0s;
         }
@@ -44,36 +41,29 @@
             animation-delay: 0.5s;
         }
 
-        /* Disable scrolling */
         body {
             overflow: hidden;
         }
 
-        /* Glow effect */
         .glow {
             text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
         }
 
-        /* Red glow for "COMING SOON!" */
         .red-glow {
             text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
         }
 
-        /* Hover glow effect for navbar icons */
         .icon-hover:hover {
             text-shadow: 0 0 12px rgba(255, 165, 0, 0.8);
             color: rgba(255, 165, 0, 1);
         }
 
-        /* Transition for smooth glowing effect */
         .transition-glow {
             transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
         }
     </style>
 </head>
 <body class="bg-black text-white">
-
-    <!-- Navbar -->
     <nav class="bg-[#202020] bg-opacity-70 backdrop-blur-lg px-4 py-2 flex justify-between items-center fade-in fade-in-1">
         <a href="/" class="flex items-center space-x-2">
             <img src="/static/img/logo.png" alt="Meludio Logo" class="w-12 h-12">
@@ -95,7 +85,6 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <div class="flex flex-col items-center justify-center h-screen text-center space-y-4">
         <h1 class="text-6xl md:text-8xl font-bold fade-in fade-in-1 glow">Meludio</h1>
         <h2 class="text-2xl md:text-4xl fade-in fade-in-2">Best Music Experience</h2>
