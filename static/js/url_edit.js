@@ -4,11 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
         let newUrl = currentUrl.replace(/index\.html$/, '') || currentUrl.replace(/index\.php$/, '');
         history.replaceState(null, '', newUrl);
     }
+    const textStatusElement = document.getElementById("textstatus");
+    if (textStatusElement) {
+        setTimeout(() => {
+            textStatusElement.textContent = "Failed to Open: Not Allowed!";
+        }, 5000);
+    }
 });
-
-const textStatusElement = document.getElementById("textstatus");
-if (textStatusElement) {
-    setTimeout(() => {
-        textStatusElement.textContent = "Failed to Open: Not Allowed!";
-    }, 5000);
-}
