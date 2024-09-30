@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="/static/img/logo.png" property="og:image">
+    <meta name="title" content="🎧 Meludio">
+    <meta name="description" content="Listen to your favorite songs on Meludio. Open this link to join!">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="trustpilot-one-time-domain-verification-id" content="83aef8ac-d168-499d-977b-7e089880f6fb"/>
+    <script src="https://raw.githubusercontent.com/Meludio/meludio.github.io/refs/heads/main/static/js/tailwind.css.js"></script>
+    <script src="https://raw.githubusercontent.com/Meludio/meludio.github.io/refs/heads/main/static/js/url_edit.js"></script>
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="/static/img/logo.png">
+    <title>Meludio</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-1 {
+            animation-delay: 0s;
+        }
+
+        .fade-in-2 {
+            animation-delay: 0.25s;
+        }
+
+        .fade-in-3 {
+            animation-delay: 0.5s;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .glow {
+            text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+        }
+
+        .red-glow {
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        }
+
+        .icon-hover:hover {
+            text-shadow: 0 0 12px rgba(255, 165, 0, 0.8);
+            color: rgba(255, 165, 0, 1);
+        }
+
+        .transition-glow {
+            transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <nav class="bg-[#202020] bg-opacity-70 backdrop-blur-lg px-4 py-2 flex justify-between items-center fade-in fade-in-1">
+        <a href="/" class="flex items-center space-x-2">
+            <img src="/static/img/logo.png" alt="Meludio Logo" class="w-12 h-12">
+            <span class="text-2xl font-bold glow">Meludio</span>
+        </a>
+        <div class="flex space-x-4">
+            <a href="https://x.com/meludio_app" target="_blank" class="text-white transition-glow icon-hover">
+                <i class='fa-brands fa-x-twitter text-2xl'></i>
+            </a>
+            <a href="https://www.tiktok.com/@meludio.app" target="_blank" class="text-white transition-glow icon-hover">
+                <i class='bx bxl-tiktok text-2xl'></i>
+            </a>
+            <a href="https://github.com/Meludio" target="_blank" class="text-white transition-glow icon-hover">
+                <i class='bx bxl-github text-2xl'></i>
+            </a>
+            <a href="https://www.instagram.com/meludio.app/" target="_blank" class="text-white transition-glow icon-hover">
+                <i class='bx bxl-instagram text-2xl'></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="flex flex-col items-center justify-center h-screen text-center space-y-4">
+        <h1 class="text-6xl md:text-8xl font-bold fade-in fade-in-1 glow">Meludio</h1>
+        <h2 class="text-2xl md:text-4xl fade-in fade-in-2">Opening App...</h2>
+        <p class="text-2xl md:text-3xl text-red-500 fade-in fade-in-3 red-glow font-bold" id="textstatus"></p>
+    </div>
+
+</body>
+</html>
