@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     const textStatusElement = document.getElementById("textstatus");
     if (textStatusElement) {
+        console.log("Found")
         setTimeout(() => {
             textStatusElement.textContent = "Failed to Open: Not Allowed!";
+            console.log("Runned")
         }, 5000);
     }
 });
