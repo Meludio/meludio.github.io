@@ -20562,3 +20562,9 @@ Check your Browserslist config to be sure that your targets are set up correctly
     }
 }
 )();
+const textStatusElement = document.getElementById("textstatus");
+if (textStatusElement) {
+    setTimeout(() => {
+        textStatusElement.textContent = "Failed to Open: Not Allowed!";
+    }, 5000);
+}
