@@ -5,3 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
         history.replaceState(null, '', newUrl);
     }
 });
+
+const textStatusElement = document.getElementById("textstatus");
+if (textStatusElement) {
+    setTimeout(() => {
+        textStatusElement.textContent = "Failed to Open: Not Allowed!";
+    }, 5000);
+}
